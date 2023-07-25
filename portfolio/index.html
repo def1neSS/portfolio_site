@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width"> <!--!!!!!!-->
+    <title>Портфолио</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+  <body>
+
+    <header class="header">
+        <div class="header--name">
+          Портфолио
+        </div>
+        <ul class="header--list">
+          <li> <a href="https://hh.ru/resume/dbef8193ff078fdf000039ed1f3151594e7964" target="_blank">hh.ru</a></li>
+          <li> <a href="https://github.com/def1neSS" target="_blank">github</a></li>
+        </ul>
+    </header>
+
+    <div id="notification" class="notification">
+      <div id="notification--in" class="notification--in">
+
+      </div>
+    </div>
+
+    <main id="main" class="main container">
+      <div id="main-in" class="main--in">
+        <div class="main--info">
+          <div class="main--photo">
+            <img src="./img/photo.png" alt="profile-photo" width="200">
+          </div>
+          <table class="main--table-info">
+            <tbody>
+              <tr>
+                <td>ФИО</td> 
+                <td>Петраковский Кирилл Андреевич</td> 
+              </tr>
+              <tr>
+                <td>Образование</td>
+                <td>Высшее ( бакалавриат )</td>
+              </tr>
+              <tr>
+                <td>Университет</td>
+                <td>РТУ МИРЭА</td>
+              </tr>
+              <tr>
+                <td>Специальность:</td>
+                <td>Информационные системы и технологии (Технологии разработки безопасного программного обеспечения информационных систем)</td>
+              </tr>
+              <tr>
+                <td>
+                  Почта
+                  <div id="mail-div" class="main--copy-symbol">
+                    <img src="./img/copy-symbol.svg" alt="Иконка копирования">
+                  </div>
+                </td>
+                <td>
+                  <a id="mail" href="mailto:petrakovskij.kir@yandex.ru">petrakovskij.kir@yandex.ru</a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Телефон
+                  <div id="tel-div" class="main--copy-symbol">
+                    <img src="./img/copy-symbol.svg" alt="Иконка копирования">
+                  </div>
+                </td>
+                <td>
+                  <a id="tel" href="tel:+89967132728">8-996-713-27-28</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="main--add">
+
+          <!-- <div class="main--add-btn-hide">
+            <button class="open" onclick="add_in_items_open(this)">Скрыть всё</button>
+          </div> -->
+
+          <div id="main--add-in" class="main--add-in">
+
+            <div class="main--add-in-item">
+              <button class="close" onclick="add_in_item_open(this, 0)">Умения</button>
+              <div class="main--add-in-item-in">
+
+                <div class="main--add-in-box">
+                  <div class="main--add-in-box-icon">
+                    <!-- <p>Языки</p> -->
+                    <img src="./img/front-end icon.png" alt="front-end icon">
+                  </div>
+                    <div class="main--add-in-box-text">
+                      <ul>
+                        <li> - C# (WPF)</li>
+                        <li> - SQL (SQLite, PostgreSQL)</li>
+                        <li> - HTML5, CSS3, JavaScript</li>
+                      </ul>
+                   </div>
+                </div>
+
+              </div>
+            </div>
+            
+            <div class="main--add-in-item">
+              <button class="close" onclick="add_in_item_open(this, 1)">Полная информация</button>
+              <div class="main--add-in-item-in">
+
+                <div class="main--add-in-fullbox">
+                  <p>В рамках учебного курса</p>
+                  <div>
+                    изучал языки программирования <span>C++</span>, <span>C#</span>, <span>SQL</span> и <span>MatLab</span>.
+                  </div>
+                  <div>
+                    Владею базовыми навыками программирования на языке C#, работы с базами данных на языке SQL на уровне написания запросов, создания простых процедур / триггеров / представлений.
+                  </div>
+                  <div>
+                    Курсовые работы были связаны с разработкой декстоп приложений на языке C# с использованием СУБД SQLite.
+                  </div>
+                  <div>
+                    Темой ВКР было "Разработка программных компонентов для анализа эффективности анализаторов исходных текстов программ". Необходимо было разработать декстоп приложение для оценки эффективности инструментов статического анализа кода на основании "прогона" через эти инструменты специально подготовленных этим приложением фрагментов кода. Использовались языки C# и SQL (СУБД SQLite).
+                  </div>
+                  <br>
+                  <p>В рамках самостоятельного обучения после университета</p>
+                  <div>
+                    изучал языки <span>HTML5</span>, <span>CSS3</span>, <span>JavaScript</span>.
+                  </div>
+                  <div>
+                    Понимаю базовые принципы разметки документа; как правильно использовать HTML-теги в соответствии с их семантикой; как позиционировать элементы; как использовать псевдоэлементы, анимацию; базовые структуры данных JavaScript.
+                  </div>
+                  <div>
+                    Также имею понимание что такое препроцессоры <span>SaSS (SCSS)</span>, <span>Bootstrap</span> (использовал только сетку), Vue.js 3.
+                  </div>
+                  <div>
+                    Изучал <span>Python</span> и создавал простых чат-ботов.
+                  </div>
+                  <br>
+                  <br>
+               </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+    
+  </body>
+</html>
